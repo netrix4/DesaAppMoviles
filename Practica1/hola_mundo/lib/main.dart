@@ -47,7 +47,9 @@ class MyApp extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          CircleAvatar(),
+                          CircleAvatar(
+                            child: Icon(Icons.person_rounded),
+                          ),
                           SizedBox(
                             width: 10,
                           ),
@@ -82,23 +84,22 @@ class MyApp extends StatelessWidget {
                   color: Colors.white70,
                   width: double.infinity,
                   height: 40,
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Row(
                         children: [
-                          Text("(*)"),
+                          Icon(Icons.cake_outlined, color: Colors.lightBlue.shade400),
                           Text("Cake")
                         ],
                       ),
                       Row(
                         children: [
-                          Text("(*)"),
+                          Icon(Icons.mode_comment_outlined, color: Colors.lightBlue.shade400,),
                           Text("22 Coments")
                         ],
                       )
                     ],
-            
                   ),
                 ),                
             
@@ -128,7 +129,9 @@ class MyApp extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          CircleAvatar(),
+                          CircleAvatar(
+                            child: Icon(Icons.person_3),
+                          ),
                           SizedBox(
                             width: 10,
                           ),
@@ -163,24 +166,44 @@ class MyApp extends StatelessWidget {
                   color: Colors.white70,
                   width: double.infinity,
                   height: 40,
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Row(
                         children: [
-                          Text("(*)"),
+                          Icon(Icons.cake_outlined, color: Colors.lightBlue.shade400),
                           Text("Cake")
                         ],
                       ),
                       Row(
                         children: [
-                          Text("(*)"),
+                          Icon(Icons.mode_comment_outlined, color: Colors.lightBlue.shade400),
                           Text("22 Coments")
                         ],
                       )
                     ],
                   ),
                 ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Column(
+              children: [
+                ElevatedButton(
+                  onPressed: (){
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: const Text("Hola mundo!"),
+                      action: SnackBarAction(
+                        label: "Undo",
+                        onPressed: (){}
+                      ),
+                    )
+                  ); 
+                }, 
+                child:const Text("Press Me!"))
               ],
             )
           ]
