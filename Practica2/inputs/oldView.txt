@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+class MyHomepage extends StatefulWidget {
+  const MyHomepage({super.key});
+
+  @override
+  State<MyHomepage> createState() => _MyHomepageState();
+}
+
+class _MyHomepageState extends State<MyHomepage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Titulooo'),
+          backgroundColor: Colors.blueAccent.shade100,
+      ),
+      body: Column(
+        children: [
+          const Text("MiPrimeraColumna"),
+          TextField(decoration: InputDecoration(
+            hintText: "CVV", 
+            prefixIcon: const Icon(Icons.cake_outlined),
+            suffix: const Icon(Icons.car_crash),
+            icon: Icon(Icons.catching_pokemon, color: Colors.red.shade400,),
+            labelText: "Pon tu nombre aqui",
+            counterText: "Esto va a ser tu pista"
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
