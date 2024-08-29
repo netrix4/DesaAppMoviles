@@ -22,16 +22,117 @@ class MyApp extends StatelessWidget {
           title:const Text("Historias Cortas")
         ),
         body:ListView(
+          padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+          // itemExtent: 100.0,
           children: [
             Container(
+              color: Colors.white70,
+              margin: const EdgeInsets.symmetric(vertical: 5),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Image.asset("assets/images/RedUno.png", height: 200),
-                  const Text("Texto")
+                  Image.asset("assets/images/Story1.png", height: 200),
+                  // Image.asset("assets/images/RedUno.png"),
+                  SingleChildScrollView(
+                    child:Text(
+                          "Había una vez un niño que se llamaba pablito. Tempor laboris cupidatat consectetur officia adipisicing nisi ullamco Lorem sit. Esse dolor anim sit consectetur dolor voluptate. Ex culpa eiusmod consectetur proident nulla labore cillum pariatur voluptate ad eiusmod. Ipsum occaecat elit deserunt aliqua esse anim mollit cupidatat aliquip deserunt ut amet nostrud non.", 
+                          // "Enim eiusmod id consequat quis.", 
+                          textAlign: TextAlign.center, 
+                          softWrap: true,
+                          textWidthBasis: TextWidthBasis.parent,
+                        ),
+                  )
                 ],
-              )
+              ),
+            ),
+            // const SizedBox(
+            //   height: 5,
+            // ),
+            Container(
+              color: Colors.white70,
+              margin: const EdgeInsets.symmetric(vertical: 5),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 150,
+                    child: const Text(
+                      "Pablito quería una bicicleta", 
+                      textAlign: TextAlign.center, 
+                      softWrap: true,
+                      textWidthBasis: TextWidthBasis.parent
+                    ),
+                  ),
+                  Image.asset("assets/images/Story2ALT.png", height: 200),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white70,
+              margin: const EdgeInsets.symmetric(vertical: 5),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Image.asset("assets/images/Story3.png", height: 200),
+                  Container(
+                    width: 150,
+                    child: const Text("Pablito trabajó por su bicicleta", 
+                      textAlign: TextAlign.center, 
+                      softWrap: true,
+                      textWidthBasis: TextWidthBasis.parent)
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white70,
+              margin: const EdgeInsets.symmetric(vertical: 5),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 150,
+                    child: const Text("Pablito se compró su bicicleta", 
+                      textAlign: TextAlign.center, 
+                      softWrap: true,
+                      textWidthBasis: TextWidthBasis.parent
+                    )
+                  ),
+                  Image.asset("assets/images/Story4.jpg", height: 200,width: 200,),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white70,
+              margin: const EdgeInsets.symmetric(vertical: 5),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset("assets/images/Story5.png", height: 200),
+                  const Text("Pablito fue feliz", 
+                    textAlign: TextAlign.center, 
+                    softWrap: true,
+                    textWidthBasis: TextWidthBasis.parent
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white70,
+              margin: const EdgeInsets.symmetric(vertical: 5),
+              child: const Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("FIN.")
+                  
+                ],
+              ),
             )
           ],
         )
