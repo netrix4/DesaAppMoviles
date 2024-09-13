@@ -5,6 +5,7 @@ class ItemList extends StatelessWidget {
   final Color? colorb;
   final double? customHeight;
   final double? customWidth;
+  
   //Esto es el equivalente al constructor
   const ItemList({
     required this.itemText,
