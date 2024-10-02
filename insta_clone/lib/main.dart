@@ -37,63 +37,60 @@ class MainApp extends StatelessWidget {
             icon: const Icon(Icons.scatter_plot_outlined))
           ],
         ),
-        body: Container(
-          child: Column(
-            children: [
-              Container(
-                color: Colors.white,
-                child: const SizedBox(
-                  height: 50,
-                  child: CarouselView(
-                    itemSnapping: true,
-                    itemExtent: 116, 
-                    children: [
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                      SearchSuggestionButton(),
-                    ]
-                  ),
+        body: Column(
+          children: [
+            Container(
+              color: Colors.white,
+              child: const SizedBox(
+                height: 50,
+                child: CarouselView(
+                  // itemSnapping: true,
+                  itemExtent: 116, 
+                  children: [
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                    SearchSuggestionButton(),
+                  ]
                 ),
               ),
-              SizedBox(
-                height: 508,
-                child: GridView.count(
-                  mainAxisSpacing: 3,
-                  crossAxisSpacing: 3,
-                  crossAxisCount: 3,
-                  padding: const EdgeInsets.symmetric(vertical: 5),
-                  children: [
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                    Container(color: const Color.fromARGB(255, 238, 238, 238),),
-                  ],
-                ),
-              )
-            ],
-          ),
-
+            ),
+            SizedBox(
+              height: 508,
+              child: GridView.count(
+                mainAxisSpacing: 3,
+                crossAxisSpacing: 3,
+                crossAxisCount: 3,
+                padding: const EdgeInsets.symmetric(vertical: 5),
+                children: [
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                  Container(color: const Color.fromARGB(255, 238, 238, 238),),
+                ],
+              ),
+            )
+          ],
         ),
         bottomNavigationBar:const NavBar(),
       ),
