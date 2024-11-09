@@ -55,7 +55,7 @@ int _selectIndex = 0;
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined, size: 30),
-              label: 'Profile',
+              label: '',
             ),
           ],
         ),
